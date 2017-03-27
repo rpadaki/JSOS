@@ -1,0 +1,67 @@
+body {
+    background-color: white;
+    color: rgb(0, 120, 0);
+    font-family: "Courier New", Courier, monospace;
+}
+
+#display {
+    color: rgb(120, 0, 0);
+}
+
+.window {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+
+    width: 500px;
+    height: 300px;
+    box-shadow: 2px 2px 5px #888888;
+    background-color: rgba(200,200,200,0.85);
+}
+
+iframe {
+    position: absolute;
+    top: 18px;
+    left: 2%;
+    width: 96%;
+    /* Firefox */
+    height: -moz-calc(98% - 18px);
+    /* WebKit */
+    height: -webkit-calc(98% - 18px);
+    /* Opera */
+    height: -o-calc(98% - 18px);
+    /* Standard */
+    height: calc(98% - 18px);
+}
+
+.close {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: red;
+    line-height: 16px;
+    top: 1px;
+    right: 1px;
+    border-radius: 37.5%;
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Opera, Chrome, and Safari */
+    transform: rotate(45deg);
+
+}.mini {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: yellow;
+    line-height: 16px;
+    top: 1px;
+    right: 18px;
+    border-radius: 37.5%;
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Opera, Chrome, and Safari */
+    transform: rotate(45deg);
+
+}
